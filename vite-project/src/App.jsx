@@ -8,6 +8,10 @@ import Home from './component/Home'
 import About from './component/About'
 import Contact from './component/Contact'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Nopage from './component/Nopage'
+
+import Register from './component/Register'
+import Layout from './component/Layout'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,8 +19,8 @@ function App() {
     <>
        <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Landingpage />} />
+        <Route path="/" element={<Layout/>}>
+        <Route index element={<Landingpage/>}/>
           <Route path="login" element={<Login />} />
           <Route path="Register" element={<Register />} />
           <Route path="Home" element={<Home />} />
