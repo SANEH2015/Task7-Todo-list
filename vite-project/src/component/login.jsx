@@ -1,8 +1,27 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import image from '../assets/lg-removebg-preview.png'
+
 
 function Login() {
   return (
-    <div style={{  padding: '20px', minHeight: '100vh' }}>
+    <>
+    <div>
+    <nav style={{  padding: '10px', marginBottom: '20px', backgroundColor:"rgb(239, 225, 224)", display: 'flex', justifyContent: 'space-between' }}>
+        <img style={{width:"100px",height:"100px"}} src={image}></img>
+        <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex' }}>
+          <li style={{ marginRight: '20px' }}>
+           <Link to={'Landingpage'} ><a  style={{ textDecoration: 'none', color: '#333' }}>Home</a></Link> 
+          </li>
+          <li style={{ marginRight: '20px' }}>
+          <Link to={'/Register'} > <a style={{ textDecoration: 'none', color: '#333' }}>Register</a></Link> 
+          </li>
+          <li style={{ marginRight: '20px' }}>
+          <Link to={'Contact'} > <a style={{ textDecoration: 'none', color: '#333' }}>Contact</a></Link> 
+          </li>
+        </ul>
+      </nav>
+      <div style={{  padding: '20px', minHeight: '100vh' }}>
       <div style={{ backgroundColor: '#fff', borderRadius: '10px', padding: '20px', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.1)',width:"200px" ,justifyContent:"center"}}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ width: '100%', position: 'relative' }}>
@@ -38,6 +57,10 @@ function Login() {
         </div>
       </div>
     </div>
+    </div>
+    
+    </>
+   
   );
 }
 
