@@ -35,7 +35,7 @@ export default function Landingpage() {
         </div>
       </div>
       <footer style={{ backgroundColor: 'rgb(239, 225, 224)', color: '#fff', padding: '20px', marginTop: '20px', textAlign: 'center' }}>
-        <p>&copy; 2024 Todo List.</p>
+        <p>&copy;Task7 Todo List Sanele Mkhize.</p>
       </footer>
     </div>
   );

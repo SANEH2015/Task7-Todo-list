@@ -1,9 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import image from '../assets/lg-removebg-preview.png'
 
-export default function Register() {
+
+function Register() {
   return (
-    <div style={{  padding: '20px', minHeight: '100vh' }}>
-      <div style={{ backgroundColor: '#fff', borderRadius: '10px', padding: '20px', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.1)',width:"200px" ,justifyContent:"center"}}>
+    <>
+    <div>
+    <nav style={{  padding: '10px', marginBottom: '20px', backgroundColor:"rgb(239, 225, 224)", display: 'flex', justifyContent: 'space-between' }}>
+        <img style={{width:"100px",height:"100px"}} src={image}></img>
+        <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex' }}>
+          <li style={{ marginRight: '20px' }}>
+           <Link to={'/Landingpage'} ><a  style={{ textDecoration: 'none', color: '#333' }}>Home</a></Link> 
+          </li>
+          <li style={{ marginRight: '20px' }}>
+          <Link to={'/login'} > <a style={{ textDecoration: 'none', color: '#333' }}>Login</a></Link> 
+          </li>
+          <li style={{ marginRight: '20px' }}>
+          <Link to={'/Contact'} > <a style={{ textDecoration: 'none', color: '#333' }}>Contact</a></Link> 
+          </li>
+        </ul>
+      </nav>
+      <div style={{  padding: '20px', minHeight: '100vh',justifyContent:"center" }}>
+      <div style={{ backgroundColor: '#fff', borderRadius: '10px', padding: '20px', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.1)',width:"500px",marginLeft:"500px" }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ width: '100%', position: 'relative' }}>
             <div style={{ backgroundColor: '#e0e0f4', height: '200px', width: '100%', borderRadius: '10px', position: 'absolute', top: '-10px', zIndex: '-1' }} />
@@ -20,7 +39,7 @@ export default function Register() {
               <span style={{ marginRight: '5px' }}>🔒</span>
               <input type="password" placeholder="Password" style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '5px', width: '100%', maxWidth: '300px' }} />
             </div>
-            <button style={{ backgroundColor: '#007bff', color: '#fff', padding: '10px 20px', borderRadius: '5px', border: 'none', cursor: 'pointer' }}>submit</button>
+            <button style={{ backgroundColor: '#007bff', color: '#fff', padding: '10px 20px', borderRadius: '5px', border: 'none', cursor: 'pointer' }}>Register</button>
           </div>
 
          
@@ -37,6 +56,15 @@ export default function Register() {
           </div>
         </div>
       </div>
+      <footer style={{ backgroundColor: 'rgb(239, 225, 224)', color: '#fff', padding: '20px', marginTop: '20px', textAlign: 'center' }}>
+        <p>&copy;Task7 Todo List Sanele Mkhize.</p>
+      </footer>
     </div>
-  )
+    </div>
+    
+    </>
+   
+  );
 }
+
+export default Register;

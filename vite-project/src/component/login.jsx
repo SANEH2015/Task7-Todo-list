@@ -11,18 +11,18 @@ function Login() {
         <img style={{width:"100px",height:"100px"}} src={image}></img>
         <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex' }}>
           <li style={{ marginRight: '20px' }}>
-           <Link to={'Landingpage'} ><a  style={{ textDecoration: 'none', color: '#333' }}>Home</a></Link> 
+           <Link to={'/Landingpage'} ><a  style={{ textDecoration: 'none', color: '#333' }}>Home</a></Link> 
           </li>
           <li style={{ marginRight: '20px' }}>
           <Link to={'/Register'} > <a style={{ textDecoration: 'none', color: '#333' }}>Register</a></Link> 
           </li>
           <li style={{ marginRight: '20px' }}>
-          <Link to={'Contact'} > <a style={{ textDecoration: 'none', color: '#333' }}>Contact</a></Link> 
+          <Link to={'/Contact'} > <a style={{ textDecoration: 'none', color: '#333' }}>Contact</a></Link> 
           </li>
         </ul>
       </nav>
-      <div style={{  padding: '20px', minHeight: '100vh' }}>
-      <div style={{ backgroundColor: '#fff', borderRadius: '10px', padding: '20px', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.1)',width:"200px" ,justifyContent:"center"}}>
+      <div style={{  padding: '20px', minHeight: '100vh',justifyContent:"center" }}>
+      <div style={{ backgroundColor: '#fff', borderRadius: '10px', padding: '20px', boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.1)',width:"500px",marginLeft:"500px" }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ width: '100%', position: 'relative' }}>
             <div style={{ backgroundColor: '#e0e0f4', height: '200px', width: '100%', borderRadius: '10px', position: 'absolute', top: '-10px', zIndex: '-1' }} />
@@ -42,7 +42,7 @@ function Login() {
             <button style={{ backgroundColor: '#007bff', color: '#fff', padding: '10px 20px', borderRadius: '5px', border: 'none', cursor: 'pointer' }}>Log In Now</button>
           </div>
 
-          <p style={{ marginTop: '20px', fontSize: '16px', color: '#555' }}>Log in via</p>
+         
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
             <a href="#" style={{ marginRight: '10px', display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
               <i className="fa fa-instagram" aria-hidden="true" style={{ fontSize: '20px', color: '#2196F3' }} />
@@ -56,6 +56,9 @@ function Login() {
           </div>
         </div>
       </div>
+      <footer style={{ backgroundColor: 'rgb(239, 225, 224)', color: '#fff', padding: '20px', marginTop: '20px', textAlign: 'center' }}>
+        <p>&copy;Task7 Todo List Sanele Mkhize.</p>
+      </footer>
     </div>
     </div>
     
